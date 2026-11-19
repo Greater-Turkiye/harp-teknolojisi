@@ -6,13 +6,13 @@ Her konunun haftalık haber sayısı (yayın tarihine göre, son 12 hafta). Say�
 |---|---:|---:|---:|---:|---:|---:|---:|
 | Fiber optik dronlar |  |  |  |  | 6 | 22 | 28 |
 | Akustik ve pasif tespit |  |  |  |  | 8 | 13 | 21 |
-| Önleyici dronlar ve ucuz hava savunma |  |  |  |  | 11 | 46 | 57 |
+| Önleyici dronlar ve ucuz hava savunma |  |  |  |  | 11 | 47 | 58 |
 | FPV ve vurucu küçük dronlar | 1 |  |  |  | 1 | 5 | 7 |
 | Elektronik harp |  |  |  |  | 3 | 9 | 12 |
-| Yapay zekâ ve otonomi | 1 | 2 | 1 | 1 | 11 | 36 | 52 |
+| Yapay zekâ ve otonomi | 1 | 2 | 1 | 1 | 12 | 37 | 54 |
 | İnsansız deniz araçları |  |  |  |  | 7 | 24 | 31 |
 | İnsansız kara araçları |  |  | 1 |  | 1 | 10 | 12 |
-| Lazer ve mikrodalga silahları |  |  |  |  | 12 | 18 | 30 |
+| Lazer ve mikrodalga silahları |  |  |  |  | 12 | 19 | 31 |
 | Uzun menzilli dron ve füze kampanyaları |  | 1 | 1 |  | 7 | 24 | 33 |
 | Uydu, iletişim ve ağlar |  | 2 |  |  |  | 6 | 8 |
 | Zırhın cevabı: kafesler, ağlar, aktif koruma |  |  |  |  | 1 |  | 1 |
