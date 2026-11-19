@@ -1,0 +1,37 @@
+name: Derle
+
+on:
+  schedule:
+    - cron: "15 4,16 * * *"   # günde iki kez: 07:15 ve 19:15 TSİ
+  workflow_dispatch:
+  pull_request:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: derle
+  cancel-in-progress: false
+
+jobs:
+  derle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pytest && python -m pytest -q
+      - name: Akışları derle
+        if: github.event_name != 'pull_request'
+        run: python derle.py
+      - name: Kaydet
+        if: github.event_name != 'pull_request'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add veri raporlar SON.md
+          git diff --cached --quiet && exit 0
+          git commit -m "Derleme $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push

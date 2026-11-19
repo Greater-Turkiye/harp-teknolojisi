@@ -1,0 +1,80 @@
+# Konular: sahada teoriyi bozan teknolojiler. `desen` başlık + özet üzerinde, büyük/küçük harf duyarsız
+# düzenli ifadelerdir (İngilizce ve Türkçe). Bir öğe birden çok konuya girebilir; sıra rapordaki sıradır.
+
+[[konu]]
+id = "fiber"
+ad = "Fiber optik dronlar"
+neden = "Radyo yaymaz: karıştırıcı ve RF dedektörü işe yaramaz"
+desen = ['fib(er|re)[- ]optic', 'fiber[- ]optik', 'tethered drone', 'spool']
+
+[[konu]]
+id = "akustik"
+ad = "Akustik ve pasif tespit"
+neden = "Mikrofon ağıyla ucuz 'radar': Sky Fortress, Zvook"
+desen = ['acoustic', 'akustik', 'microphone', 'mikrofon', 'sky fortress', 'zvook', 'passive (sensor|detection|radar)', 'pasif (tespit|radar)']
+
+[[konu]]
+id = "onleyici"
+ad = "Önleyici dronlar ve ucuz hava savunma"
+neden = "Milyon dolarlık füze yerine birkaç bin dolarlık dron Shahed düşürüyor"
+desen = ['interceptor drone', 'drone interceptor', 'counter[- ]?(uas|drone|uav)', 'shahed', 'geran', 'mobile fire group', 'önleyici (dron|İHA)', 'anti-?dron']
+
+[[konu]]
+id = "fpv"
+ad = "FPV ve vurucu küçük dronlar"
+neden = "Birkaç yüz dolarlık dron tank ve topçu imha ediyor"
+desen = ['\bfpv\b', 'first[- ]person[- ]view', 'kamikaze drone', 'loitering munition', 'lancet', 'switchblade', 'dron(e)? strike on (a )?tank', 'kamikaze (İHA|dron)', 'dolanan mühimmat']
+
+[[konu]]
+id = "ew"
+ad = "Elektronik harp"
+neden = "Karıştırma ve aldatma, GPS ve iletişimi sahada çökertiyor"
+desen = ['electronic warfare', 'jamm', 'spoof', '\bgnss\b', 'gps (denial|interference)', 'elektronik harp', 'karıştırıc']
+
+[[konu]]
+id = "otonomi"
+ad = "Yapay zekâ ve otonomi"
+neden = "Son metrelerde operatörsüz hedefe kilitlenme; karıştırmaya dayanıklılık"
+desen = ['autonom', 'machine vision', 'terminal guidance', '\bai[- ](enabled|powered|targeting|guided)', 'artificial intelligence', 'swarm', 'otonom', 'yapay zek', 'sürü']
+
+[[konu]]
+id = "deniz-insansiz"
+ad = "İnsansız deniz araçları"
+neden = "Donanması olmayan taraf, filoyu limana kapattı"
+desen = ['naval drone', 'sea drone', 'sea baby', 'magura', '\busv\b', 'unmanned surface', '\buuv\b', 'underwater drone', 'insansız deniz', 'İDA']
+
+[[konu]]
+id = "kara-insansiz"
+ad = "İnsansız kara araçları"
+neden = "Lojistik, tahliye ve mayın döşeme robotlara geçiyor"
+desen = ['\bugv\b', 'ground robot', 'unmanned ground', 'robotic (platoon|system|vehicle)', 'insansız kara', 'İKA']
+
+[[konu]]
+id = "yonlendirilmis-enerji"
+ad = "Lazer ve mikrodalga silahları"
+neden = "Atış başı maliyet dolarlara iniyor"
+desen = ['laser weapon', 'high[- ]energy laser', 'directed[- ]energy', 'high[- ]power microwave', 'iron beam', 'dragonfire', 'lazer silah', 'yönlendirilmiş enerji']
+
+[[konu]]
+id = "uzun-menzil"
+ad = "Uzun menzilli dron ve füze kampanyaları"
+neden = "Ucuz uzun menzilli dronlar, rafineri ve üsleri cephenin çok gerisinde vuruyor"
+desen = ['long[- ]range (drone|strike)', 'deep strike', 'refinery', 'oil depot', 'mothership', 'cruise missile', 'flamingo', 'uzun menzil', 'rafineri']
+
+[[konu]]
+id = "uydu-iletisim"
+ad = "Uydu, iletişim ve ağlar"
+neden = "Starlink ve mesh ağları, komuta-kontrolü cebe sığdırdı"
+desen = ['starlink', 'satellite (internet|imagery|communication)', 'mesh network', 'delta (system|platform)', 'kill chain', 'battle management', 'uydu']
+
+[[konu]]
+id = "zirh-karsi-onlem"
+ad = "Zırhın cevabı: kafesler, ağlar, aktif koruma"
+neden = "Tanklar 'kaplumbağa' oldu, yollar ağ tünellerine döndü"
+desen = ['cope cage', 'turtle tank', 'anti[- ]drone (net|cage)', 'active protection', 'trophy aps', 'netting', 'kafes zırh', 'aktif koruma']
+
+[[konu]]
+id = "uretim-maliyet"
+ad = "Üretim, maliyet ve ölçek"
+neden = "Savaş fabrikada kazanılıyor: ayda milyonlarca dron"
+desen = ['mass[- ]produc', 'production (rate|line|capacity)', 'per month', 'cost[- ]per', 'cheap', 'seri üretim', 'üretim kapasitesi']

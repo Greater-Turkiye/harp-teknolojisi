@@ -1,0 +1,134 @@
+# Kaynaklar: yalnızca kamuya açık RSS/Atom akışları. Her biri 2026-11-19'da denendi ve öğe döndürdü.
+# `genel = true` olan akışlarda bir öğe ancak konular.toml'daki bir konuya uyarsa alınır;
+# `konu = "..."` olan Google News aramalarında konu sorgunun kendisidir.
+
+[[akis]]
+ad = "The War Zone"
+url = "https://www.twz.com/feed"
+genel = true
+
+[[akis]]
+ad = "Breaking Defense"
+url = "https://breakingdefense.com/feed/"
+genel = true
+
+[[akis]]
+ad = "Defense News"
+url = "https://www.defensenews.com/arc/outboundfeeds/rss/"
+genel = true
+
+[[akis]]
+ad = "C4ISRNET"
+url = "https://www.c4isrnet.com/arc/outboundfeeds/rss/"
+genel = true
+
+[[akis]]
+ad = "Naval News"
+url = "https://www.navalnews.com/feed/"
+genel = true
+
+[[akis]]
+ad = "The Aviationist"
+url = "https://theaviationist.com/feed/"
+genel = true
+
+[[akis]]
+ad = "Army Technology"
+url = "https://www.army-technology.com/feed/"
+genel = true
+
+[[akis]]
+ad = "Naval Technology"
+url = "https://www.naval-technology.com/feed/"
+genel = true
+
+[[akis]]
+ad = "Airforce Technology"
+url = "https://www.airforce-technology.com/feed/"
+genel = true
+
+[[akis]]
+ad = "Unmanned Airspace"
+url = "https://www.unmannedairspace.info/feed/"
+genel = true
+
+[[akis]]
+ad = "Defence Blog"
+url = "https://defence-blog.com/feed/"
+genel = true
+
+[[akis]]
+ad = "Euromaidan Press"
+url = "https://euromaidanpress.com/feed/"
+genel = true
+
+[[akis]]
+ad = "Kyiv Post"
+url = "https://www.kyivpost.com/feed"
+genel = true
+
+[[akis]]
+ad = "War on the Rocks"
+url = "https://warontherocks.com/feed/"
+genel = true
+
+[[akis]]
+ad = "Modern War Institute"
+url = "https://mwi.westpoint.edu/feed/"
+genel = true
+
+[[akis]]
+ad = "SavunmaSanayiST"
+url = "https://www.savunmasanayist.com/feed/"
+genel = true
+
+[[akis]]
+ad = "DefenceTurk"
+url = "https://www.defenceturk.net/feed"
+genel = true
+
+# Google News konu aramaları: son 7 gün, İngilizce. Başlık "… - Yayıncı" biçimindedir.
+[[akis]]
+ad = "Google News"
+konu = "fiber"
+url = "https://news.google.com/rss/search?q=%22fiber+optic%22+drone+when:7d&hl=en-US&gl=US&ceid=US:en"
+
+[[akis]]
+ad = "Google News"
+konu = "akustik"
+url = "https://news.google.com/rss/search?q=acoustic+drone+detection+OR+%22Sky+Fortress%22+when:7d&hl=en-US&gl=US&ceid=US:en"
+
+[[akis]]
+ad = "Google News"
+konu = "onleyici"
+url = "https://news.google.com/rss/search?q=interceptor+drone+OR+%22drone+interceptor%22+when:7d&hl=en-US&gl=US&ceid=US:en"
+
+[[akis]]
+ad = "Google News"
+konu = "deniz-insansiz"
+url = "https://news.google.com/rss/search?q=%22naval+drone%22+OR+%22sea+drone%22+OR+USV+Ukraine+when:7d&hl=en-US&gl=US&ceid=US:en"
+
+[[akis]]
+ad = "Google News"
+konu = "kara-insansiz"
+url = "https://news.google.com/rss/search?q=%22ground+robot%22+OR+UGV+Ukraine+front+when:7d&hl=en-US&gl=US&ceid=US:en"
+
+[[akis]]
+ad = "Google News"
+konu = "ew"
+url = "https://news.google.com/rss/search?q=%22electronic+warfare%22+drone+jamming+when:7d&hl=en-US&gl=US&ceid=US:en"
+
+[[akis]]
+ad = "Google News"
+konu = "otonomi"
+url = "https://news.google.com/rss/search?q=AI+targeting+OR+%22terminal+guidance%22+OR+%22autonomous+drone%22+war+when:7d&hl=en-US&gl=US&ceid=US:en"
+
+[[akis]]
+ad = "Google News"
+konu = "yonlendirilmis-enerji"
+url = "https://news.google.com/rss/search?q=laser+OR+microwave+counter-drone+weapon+when:7d&hl=en-US&gl=US&ceid=US:en"
+
+[[akis]]
+ad = "Google News"
+konu = "uzun-menzil"
+url = "https://news.google.com/rss/search?q=Ukraine+long-range+drone+strike+refinery+OR+%22mothership%22+drone+when:7d&hl=en-US&gl=US&ceid=US:en"
