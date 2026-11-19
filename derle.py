@@ -212,6 +212,38 @@ def rapor(gorulen: dict[str, dict], konular: list[dict], gun: dt.date, durum: di
     return f
 
 
+def evrim(gorulen: dict[str, dict], konular: list[dict]) -> Path:
+    """Teknolojinin hızı: her konunun haftalık haber sayısı (yayın tarihine göre) ve ilk görüldüğü gün.
+    Bir konunun sayısı haftalar içinde artıyorsa, o teknoloji sahada yayılıyor demektir."""
+    hafta = lambda t: "{}-H{:02d}".format(*dt.date.fromisoformat(t[:10]).isocalendar()[:2])
+    sayim: dict[str, dict[str, int]] = {}
+    ilk: dict[str, dict] = {}
+    for k in gorulen.values():
+        for kid in k["konular"]:
+            h = hafta(k["tarih"])
+            sayim.setdefault(kid, {})[h] = sayim.setdefault(kid, {}).get(h, 0) + 1
+            if kid not in ilk or k["tarih"] < ilk[kid]["tarih"]:
+                ilk[kid] = k
+    haftalar = sorted({h for d in sayim.values() for h in d})[-12:]
+    satirlar = ["# Evrim: hangi teknoloji ne hızla konuşuluyor", "",
+                "Her konunun haftalık haber sayısı (yayın tarihine göre, son 12 hafta). Sayı haftadan haftaya "
+                "artıyorsa o teknoloji sahada yayılıyor ya da yeni bir aşamaya geçiyor demektir. "
+                "Veri derlemenin başladığı günden itibaren birikir; ilk haftalar eksiktir.", "",
+                "| Konu | " + " | ".join(h[5:] for h in haftalar) + " | Toplam |",
+                "|---|" + "---:|" * (len(haftalar) + 1)]
+    for kon in konular:
+        d = sayim.get(kon["id"], {})
+        satirlar.append(f"| {kon['ad']} | " + " | ".join(str(d.get(h, "")) for h in haftalar) + f" | {sum(d.values())} |")
+    satirlar += ["", "## Her konunun arşivdeki en eski haberi", ""]
+    for kon in konular:
+        if kon["id"] in ilk:
+            k = ilk[kon["id"]]
+            satirlar.append(f"- **{kon['ad']}** — {k['tarih'][:10]}: [{yalin(k['baslik'])}]({k['baglanti']})")
+    f = KOK / "EVRIM.md"
+    f.write_text("\n".join(satirlar) + "\n", encoding="utf-8")
+    return f
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--kuru", action="store_true", help="ağa çıkma, yalnızca raporu yeniden yaz")
@@ -224,7 +256,8 @@ def main(argv: list[str] | None = None) -> int:
         kaydet(gorulen)
         print(f"{len(yeni)} yeni haber; {durum['akis']} akış; düşen: {durum['hata'] or 'yok'}; elenen: {durum['reddedilen'] or 'yok'}")
     f = rapor(gorulen, konular, dt.datetime.now(dt.timezone.utc).date(), durum)
-    print(f"rapor: {f.relative_to(KOK)}")
+    evrim(gorulen, konular)
+    print(f"rapor: {f.relative_to(KOK)}; evrim: EVRIM.md")
     return 0
 
 

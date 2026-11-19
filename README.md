@@ -1,8 +1,8 @@
-# Harp teknolojisi
+# Harp teknolojisi takibi
 
-Sahadaki savaşın teknolojisini takip eden derleme programı. Teoride yazılanla cephede olan farklıdır: birkaç yüz dolarlık bir dron tank imha eder, fiber optik kablo karıştırıcıyı işe yaramaz hale getirir, sekiz mikrofonlu bir direk ucuz bir radar olur. Bu depo, bu tür gelişmeleri açık kaynaklardan her gün toplar, konulara ayırır ve dönemsel saha notlarında yorumlar.
+Savaşlarda kullanılan teknolojiyle ilgili haberleri tek yerde toplayan bir takip aracı. Burada yeni bilgi üretilmez: herkesin okuyabildiği savunma ve haber sitelerindeki haberler derlenir ve konulara ayrılır. Amaç iki şey. Birincisi, takip etmeyi kolaylaştırmak. İkincisi, teknolojinin ne hızla geliştiğini ve nasıl evrildiğini görmek: küçük bir FPV dronun tank imha etmesi, fiber optik kablonun karıştırıcıları etkisiz kılması, mikrofon ağlarının ucuz bir radara dönüşmesi gibi.
 
-**Son derleme: [SON.md](SON.md)** · Günlük arşiv: [raporlar/gunluk](raporlar/gunluk) · Saha notları: [saha-notlari](saha-notlari)
+**Son derleme: [SON.md](SON.md)** · **Evrim: [EVRIM.md](EVRIM.md)** · Günlük arşiv: [raporlar/gunluk](raporlar/gunluk) · Saha notları: [saha-notlari](saha-notlari)
 
 ## Ne yapar
 
@@ -11,6 +11,7 @@ Sahadaki savaşın teknolojisini takip eden derleme programı. Teoride yazılanl
 | [`kaynaklar.toml`](kaynaklar.toml) | Kamuya açık RSS akışları: TWZ, Breaking Defense, Naval News, Euromaidan Press, Kyiv Post, War on the Rocks ve diğerleri. Ayrıca her konu için bir Google News araması |
 | [`konular.toml`](konular.toml) | 13 konu, her biri neden önemli olduğuyla: fiber optik dronlar, akustik tespit, önleyici dronlar, FPV, elektronik harp, otonomi, insansız deniz ve kara araçları, lazer/mikrodalga, uzun menzilli saldırılar, uydu ve ağlar, zırhın cevabı, üretim ve maliyet |
 | [`derle.py`](derle.py) | Akışları çeker, konuya göre süzer, aynı haberi tek kayıtta birleştirir (birden çok yayıncı = önem), kırmızı çizgilerden geçirir, `veri/` ve `raporlar/gunluk/` altına yazar. Yalnızca Python standart kütüphanesi |
+| [`EVRIM.md`](EVRIM.md) | Her konunun haftalık haber sayısı ve arşivdeki en eski haberi: hangi teknoloji yükselişte, hangisi durgun |
 | [`.github/workflows/derle.yml`](.github/workflows/derle.yml) | Günde iki kez (07:15 ve 19:15 TSİ) testleri çalıştırır, derler ve sonucu depoya işler |
 | [`saha-notlari/`](saha-notlari) | Haber akışının ötesinde, tek bir gelişmeyi derinlemesine anlatan notlar: ne, nasıl çalışıyor, sahada ne değişti, karşı önlem, Türkiye için anlamı, kaynaklar |
 
