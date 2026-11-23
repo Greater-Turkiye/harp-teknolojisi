@@ -53,7 +53,7 @@ desen = ['\bugv\b', 'ground robot', 'unmanned ground', 'robotic (platoon|system|
 id = "yonlendirilmis-enerji"
 ad = "Lazer ve mikrodalga silahları"
 neden = "Atış başı maliyet dolarlara iniyor"
-desen = ['laser weapon', 'high[- ]energy laser', 'directed[- ]energy', 'high[- ]power microwave', 'iron beam', 'dragonfire', 'lazer silah', 'yönlendirilmiş enerji']
+desen = ['laser weapon', 'electromagnetic (weapon|pulse|gun|cannon)', 'high[- ]energy laser', 'directed[- ]energy', 'high[- ]power microwave', 'iron beam', 'dragonfire', 'lazer silah', 'yönlendirilmiş enerji']
 
 [[konu]]
 id = "uzun-menzil"
@@ -78,3 +78,9 @@ id = "uretim-maliyet"
 ad = "Üretim, maliyet ve ölçek"
 neden = "Savaş fabrikada kazanılıyor: ayda milyonlarca dron"
 desen = ['mass[- ]produc', 'production (rate|line|capacity)', 'per month', 'cost[- ]per', 'cheap', 'seri üretim', 'üretim kapasitesi']
+
+[[konu]]
+id = "diger"
+ad = "Diğer dron ve savunma teknolojisi"
+neden = "Hiçbir konu desenine girmeyen ama dron veya savunmayla açıkça ilgili haberler"
+desen = []

@@ -99,6 +99,21 @@ def konular_of(metin: str, konular: list[dict]) -> list[str]:
     return [k["id"] for k in konular if any(re.search(d, metin, re.I) for d in k["desen"])]
 
 
+# Alaka kapısı: hiçbir konu desenine uymayan öğe ancak dron/savunma ile açıkça ilgiliyse "diger"e girer.
+# Google News aramasının konusu artık zorla eklenmez; arama, başlığı alakasız haberler de döndürüyordu
+# ("Israel's economy…" otonomi, "hybrid propulsion" akustik görünüyordu).
+ALAKA = re.compile(r"\b(drones?|dron(lar)?|uavs?|uas|ucavs?|unmanned|uncrewed|insansız|iha|counter[- ]?(uas|drone)|loitering"
+                   r"|munitions?|missiles?|füze|air defen[cs]e|hava savunma|military|army|navy|ordu|defen[cs]e|savunma"
+                   r"|warfare|harp|battlefield|front ?lines?|cephe|jamm\w*|radar|interceptors?)\b", re.I)
+
+
+def etiketle(metin: str, konular: list[dict]) -> list[str]:
+    ks = konular_of(metin, konular)
+    if ks:
+        return ks
+    return ["diger"] if ALAKA.search(metin) and any(k["id"] == "diger" for k in konular) else []
+
+
 def cek(url: str) -> bytes:
     req = urllib.request.Request(url, headers={"User-Agent": UA})
     with urllib.request.urlopen(req, timeout=30) as r:
@@ -132,9 +147,7 @@ def topla(kaynaklar: dict, konular: list[dict], gorulen: dict[str, dict]) -> tup
             if neden:
                 durum["reddedilen"][neden] = durum["reddedilen"].get(neden, 0) + 1
                 continue
-            ks = konular_of(metin, konular)
-            if akis.get("konu") and akis["konu"] not in ks:
-                ks.insert(0, akis["konu"])
+            ks = etiketle(metin, konular)
             if not ks:
                 continue
             kid = anahtar(o["baslik"])
@@ -247,10 +260,25 @@ def evrim(gorulen: dict[str, dict], konular: list[dict]) -> Path:
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--kuru", action="store_true", help="ağa çıkma, yalnızca raporu yeniden yaz")
+    ap.add_argument("--yeniden-etiketle", action="store_true",
+                    help="kayıtlı tüm haberlerin konularını güncel desenlerle yeniden hesapla; alakasızları sil")
     a = ap.parse_args(argv)
     konular = yukle_toml("konular.toml")["konu"]
     gorulen = mevcut()
     durum = None
+    if a.yeniden_etiketle:
+        once = len(gorulen)
+        for kid in list(gorulen):
+            k = gorulen[kid]
+            ks = etiketle(f"{k['baslik']} {k['ozet']}", konular)
+            if ks:
+                k["konular"] = ks
+            else:
+                del gorulen[kid]
+        for f in VERI.glob("*/*.jsonl"):
+            f.unlink()
+        kaydet(gorulen)
+        print(f"yeniden etiketlendi: {len(gorulen)} kaldı, {once - len(gorulen)} alakasız silindi")
     if not a.kuru:
         yeni, durum = topla(yukle_toml("kaynaklar.toml"), konular, gorulen)
         kaydet(gorulen)

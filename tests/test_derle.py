@@ -44,3 +44,9 @@ def test_google_konusu_konular_listesinde():
     ids = {k["id"] for k in KONULAR}
     kaynaklar = tomllib.loads((Path(derle.KOK) / "kaynaklar.toml").read_text(encoding="utf-8"))["akis"]
     assert all(a["konu"] in ids for a in kaynaklar if "konu" in a)
+
+
+def test_google_konusu_zorla_eklenmez_alakasiz_elenir():
+    assert derle.etiketle("Israel's economy: How innovation is shaping growth amid conflict", KONULAR) == []
+    assert derle.etiketle("Cobra AERO advancing hybrid propulsion for UAS", KONULAR) == ["diger"]
+    assert derle.etiketle("Ukraine's Sky Fortress acoustic network grows", KONULAR)[0] == "akustik"
