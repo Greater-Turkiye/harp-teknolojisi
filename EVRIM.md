@@ -2,22 +2,22 @@
 
 Her konunun haftalık haber sayısı (yayın tarihine göre, son 12 hafta). Sayı haftadan haftaya artıyorsa o teknoloji sahada yayılıyor ya da yeni bir aşamaya geçiyor demektir. Veri derlemenin başladığı günden itibaren birikir; ilk haftalar eksiktir.
 
-| Konu | H40 | H41 | H42 | H43 | H46 | H47 | Toplam |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| Fiber optik dronlar |  |  |  |  | 1 | 17 | 18 |
-| Akustik ve pasif tespit |  |  |  |  | 3 | 9 | 12 |
-| Önleyici dronlar ve ucuz hava savunma |  |  |  |  | 6 | 71 | 77 |
-| FPV ve vurucu küçük dronlar | 1 |  |  |  | 3 | 14 | 18 |
-| Elektronik harp |  |  |  |  |  | 8 | 8 |
-| Yapay zekâ ve otonomi | 1 | 2 | 1 | 1 | 5 | 34 | 44 |
-| İnsansız deniz araçları |  |  |  |  | 5 | 68 | 73 |
-| İnsansız kara araçları |  |  | 1 |  | 1 | 17 | 19 |
-| Lazer ve mikrodalga silahları |  |  |  |  | 3 | 17 | 20 |
-| Uzun menzilli dron ve füze kampanyaları |  | 1 | 1 |  | 3 | 34 | 39 |
-| Uydu, iletişim ve ağlar |  | 2 |  |  | 1 | 14 | 17 |
-| Zırhın cevabı: kafesler, ağlar, aktif koruma |  |  |  |  | 1 | 1 | 2 |
-| Üretim, maliyet ve ölçek |  |  |  |  | 1 | 13 | 14 |
-| Diğer dron ve savunma teknolojisi |  |  |  |  | 31 | 91 | 122 |
+| Konu | H40 | H41 | H42 | H43 | H44 | H45 | H46 | H47 | H48 | Toplam |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Fiber optik dronlar |  |  |  |  |  |  | 1 | 18 |  | 19 |
+| Akustik ve pasif tespit |  |  |  |  |  |  | 3 | 9 |  | 12 |
+| Önleyici dronlar ve ucuz hava savunma |  |  |  |  |  |  | 6 | 72 | 1 | 79 |
+| FPV ve vurucu küçük dronlar | 1 |  |  |  |  |  | 3 | 14 | 4 | 22 |
+| Elektronik harp |  |  |  |  |  |  |  | 8 |  | 8 |
+| Yapay zekâ ve otonomi | 1 | 2 | 1 | 1 |  |  | 5 | 34 | 2 | 46 |
+| İnsansız deniz araçları |  |  |  |  |  |  | 5 | 71 | 24 | 100 |
+| İnsansız kara araçları |  |  | 1 |  |  |  | 1 | 17 | 3 | 22 |
+| Lazer ve mikrodalga silahları |  |  |  |  |  |  | 3 | 17 |  | 20 |
+| Uzun menzilli dron ve füze kampanyaları |  | 1 | 1 |  |  |  | 3 | 35 | 9 | 49 |
+| Uydu, iletişim ve ağlar |  | 2 |  |  |  |  | 1 | 14 |  | 17 |
+| Zırhın cevabı: kafesler, ağlar, aktif koruma |  |  |  |  |  |  | 1 | 1 |  | 2 |
+| Üretim, maliyet ve ölçek |  |  |  |  |  |  | 1 | 13 |  | 14 |
+| Diğer dron ve savunma teknolojisi | 5 | 4 | 7 | 4 | 6 | 4 | 38 | 184 | 42 | 294 |
 
 ## Her konunun arşivdeki en eski haberi
 
@@ -34,4 +34,4 @@ Her konunun haftalık haber sayısı (yayın tarihine göre, son 12 hafta). Say�
 - **Uydu, iletişim ve ağlar** — 2026-10-05: [The AI-Assisted Strategic Own Goal in the Kill Chain](https://warontherocks.com/cogs-of-war/the-ai-assisted-strategic-own-goal-in-the-kill-chain/)
 - **Zırhın cevabı: kafesler, ağlar, aktif koruma** — 2026-11-09: [Netting To Shield F-35s At Tyndall AFB From Drone Attacks Eyed By USAF](https://www.twz.com/news-features/netting-to-shield-f-35s-at-tyndall-afb-from-drone-attacks-eyed-by-usaf)
 - **Üretim, maliyet ve ölçek** — 2026-11-12: [L-39NG Skyfox Jets Could Give Ukraine A Critical New Russian Drone Hunting Capability](https://www.twz.com/air/l-39ng-skyfox-jets-could-give-ukraine-a-critical-new-russian-drone-hunting-capability)
-- **Diğer dron ve savunma teknolojisi** — 2026-11-12: [UK drone maker founded by Ukrainians hits £4.5bn value after raising £500m](https://news.google.com/rss/articles/CBMijAFBVV95cUxNMDhRLUl6Y3Excnp2clBTT2I5aGNrUFlYakduSDl6LVFjUUdkaGE4T1Q2cWVrSVpwWThvcWxtYUZEZ1hidmNhWXY1SkVkdzN3a2lyMV9hSzVqdkQ5cVZEcGR2TmMyNnp6SFdHVHNRTWJWc2l3SGVSb3BBX0lMRk05MWM5WUFaclhWUlJJYQ?oc=5)
+- **Diğer dron ve savunma teknolojisi** — 2026-09-29: [The Discipline of Refusal: Constitutional Concerns About Lawful Orders in the U.S. Military](https://warontherocks.com/the-discipline-of-refusal-constitutional-concerns-about-lawful-orders-in-the-u-s-military/)
