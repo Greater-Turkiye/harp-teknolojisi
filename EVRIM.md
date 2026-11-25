@@ -4,20 +4,20 @@ Her konunun haftalık haber sayısı (yayın tarihine göre, son 12 hafta). Say�
 
 | Konu | H40 | H41 | H42 | H43 | H44 | H45 | H46 | H47 | H48 | Toplam |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Fiber optik dronlar |  |  |  |  |  |  | 1 | 18 | 7 | 26 |
+| Fiber optik dronlar |  |  |  |  |  |  | 1 | 18 | 8 | 27 |
 | Akustik ve pasif tespit |  |  |  |  |  |  | 3 | 9 | 1 | 13 |
-| Önleyici dronlar ve ucuz hava savunma |  |  |  |  |  |  | 6 | 75 | 42 | 123 |
-| FPV ve vurucu küçük dronlar | 1 |  |  |  |  |  | 3 | 16 | 11 | 31 |
-| Elektronik harp |  |  |  |  |  |  |  | 8 | 6 | 14 |
-| Yapay zekâ ve otonomi | 1 | 2 | 1 | 1 |  |  | 5 | 37 | 16 | 63 |
-| İnsansız deniz araçları |  |  |  |  |  |  | 5 | 75 | 55 | 135 |
-| İnsansız kara araçları |  |  | 1 |  |  |  | 1 | 18 | 8 | 28 |
+| Önleyici dronlar ve ucuz hava savunma |  |  |  |  |  |  | 6 | 75 | 50 | 131 |
+| FPV ve vurucu küçük dronlar | 1 |  |  |  |  |  | 3 | 18 | 13 | 35 |
+| Elektronik harp |  |  |  |  |  |  |  | 10 | 9 | 19 |
+| Yapay zekâ ve otonomi | 1 | 2 | 1 | 1 |  |  | 5 | 38 | 17 | 65 |
+| İnsansız deniz araçları |  |  |  |  |  |  | 5 | 75 | 61 | 141 |
+| İnsansız kara araçları |  |  | 1 |  |  |  | 1 | 19 | 11 | 32 |
 | Lazer ve mikrodalga silahları |  |  |  |  |  |  | 3 | 18 |  | 21 |
-| Uzun menzilli dron ve füze kampanyaları |  | 1 | 1 |  |  |  | 3 | 37 | 20 | 62 |
+| Uzun menzilli dron ve füze kampanyaları |  | 1 | 1 |  |  |  | 3 | 37 | 29 | 71 |
 | Uydu, iletişim ve ağlar |  | 2 |  |  |  |  | 1 | 14 | 1 | 18 |
-| Zırhın cevabı: kafesler, ağlar, aktif koruma |  |  |  |  |  |  | 1 | 1 |  | 2 |
-| Üretim, maliyet ve ölçek |  |  |  |  |  |  | 1 | 13 | 4 | 18 |
-| Diğer dron ve savunma teknolojisi | 5 | 4 | 7 | 4 | 6 | 4 | 38 | 209 | 156 | 433 |
+| Zırhın cevabı: kafesler, ağlar, aktif koruma |  |  |  |  |  |  | 1 | 1 | 1 | 3 |
+| Üretim, maliyet ve ölçek |  |  |  |  |  |  | 1 | 13 | 5 | 19 |
+| Diğer dron ve savunma teknolojisi | 5 | 4 | 7 | 4 | 6 | 4 | 38 | 213 | 197 | 478 |
 
 ## Her konunun arşivdeki en eski haberi
 
