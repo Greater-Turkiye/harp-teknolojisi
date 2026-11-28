@@ -6,18 +6,18 @@ Her konunun haftalık haber sayısı (yayın tarihine göre, son 12 hafta). Say�
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | Fiber optik dronlar |  |  |  |  |  |  | 1 | 18 | 8 | 27 |
 | Akustik ve pasif tespit |  |  |  |  |  |  | 3 | 9 | 3 | 15 |
-| Önleyici dronlar ve ucuz hava savunma |  |  |  |  |  |  | 6 | 77 | 115 | 198 |
+| Önleyici dronlar ve ucuz hava savunma |  |  |  |  |  |  | 6 | 77 | 120 | 203 |
 | FPV ve vurucu küçük dronlar | 1 |  |  |  |  |  | 3 | 18 | 17 | 39 |
-| Elektronik harp |  |  |  |  |  |  |  | 11 | 12 | 23 |
-| Yapay zekâ ve otonomi | 1 | 2 | 1 | 1 |  |  | 5 | 38 | 36 | 84 |
-| İnsansız deniz araçları |  |  |  |  |  |  | 5 | 75 | 95 | 175 |
-| İnsansız kara araçları |  |  | 1 |  |  |  | 1 | 19 | 24 | 45 |
+| Elektronik harp |  |  |  |  |  |  |  | 11 | 13 | 24 |
+| Yapay zekâ ve otonomi | 1 | 2 | 1 | 1 |  |  | 5 | 38 | 38 | 86 |
+| İnsansız deniz araçları |  |  |  |  |  |  | 5 | 75 | 105 | 185 |
+| İnsansız kara araçları |  |  | 1 |  |  |  | 1 | 19 | 26 | 47 |
 | Lazer ve mikrodalga silahları |  |  |  |  |  |  | 3 | 19 | 13 | 35 |
-| Uzun menzilli dron ve füze kampanyaları |  | 1 | 1 |  |  |  | 3 | 37 | 49 | 91 |
+| Uzun menzilli dron ve füze kampanyaları |  | 1 | 1 |  |  |  | 3 | 37 | 58 | 100 |
 | Uydu, iletişim ve ağlar |  | 2 |  |  |  |  | 1 | 14 | 2 | 19 |
 | Zırhın cevabı: kafesler, ağlar, aktif koruma |  |  |  |  |  |  | 1 | 1 | 3 | 5 |
-| Üretim, maliyet ve ölçek |  |  |  |  |  |  | 1 | 13 | 11 | 25 |
-| Diğer dron ve savunma teknolojisi | 5 | 4 | 7 | 4 | 6 | 4 | 38 | 216 | 358 | 642 |
+| Üretim, maliyet ve ölçek |  |  |  |  |  |  | 1 | 13 | 12 | 26 |
+| Diğer dron ve savunma teknolojisi | 5 | 4 | 7 | 4 | 6 | 4 | 38 | 216 | 377 | 661 |
 
 ## Her konunun arşivdeki en eski haberi
 
